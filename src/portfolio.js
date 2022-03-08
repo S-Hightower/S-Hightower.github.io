@@ -3,13 +3,11 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
+  enabled: false, // set false to disable splash screen
   duration: 2000 // Set animation duration as per your animation
 };
 
@@ -20,26 +18,25 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "S Hightower",
+  title: "Hi there, I'm Shawna",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Full stack developer passionate about open source, sharing knowledge, and freedom of expression. Constantly pushing for optimization and ingenuity. An eternal student committed to learning, growing and building with new technology."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/S-Hightower",
+  linkedin: "https://www.linkedin.com/in/sdhightower/",
+  gmail: "sdhightower6@gmail.com",
+  gitlab: "https://gitlab.com/S-Hightower",
+  stackoverflow: "https://stackoverflow.com/users/16156348/shightower",
+  twitter: "https://twitter.com/Shawna_DHC",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +46,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DEVELOPER DEDICATED TO CONTINOUS LEARNING AND THE EXPANSION OF KNOWLEDGE",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Currently working on building more experience with API interaction"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Aiming to be skilled in Cloud technology and administration across platforms"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Special interests also include AI, Cybersecurity, and Game Development"
     )
   ],
 
@@ -89,8 +86,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "npm",
@@ -105,8 +102,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git"
     },
     {
       skillName: "python",
@@ -115,7 +112,27 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    },
+    {
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "ubuntu",
+      fontAwesomeClassname: "fab fa-ubuntu"
+    },
+    {
+      skillName: "centos",
+      fontAwesomeClassname: "fab fa-centos"
+    },
+    {
+      skillName: "fedora",
+      fontAwesomeClassname: "fab fa-fedora"
+    },
+    {
+      skillName: "bootstrap",
+      fontAwesomeClassname: "fab fa-bootstrap"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -126,24 +143,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Coding Dojo Bootcamp",
+      logo: require("./assets/images/codingDojo.jpg"),
+      subHeader: "Full Stack Developer Certification",
+      duration: "October 2021 - February 2022",
+      desc: "Completed Python, Java, and MERN stacks.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Fast-paced, intense 14 week program",
+        "Averaged 82 hours a week of study time"
       ]
     },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
   ]
 };
 
@@ -158,11 +167,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "65%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -171,32 +180,28 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Boarding Kennel Tech",
+      company: "Airway Veterinary",
+      companylogo: require("./assets/images/animalLogo.jpg"),
+      date: "Dec 2018 – Oct 2020",
+      desc: "Performed manual data entry for over 200 physical client records. Created criteria for the entry of the data and managed the database through program GUI."
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "At-Home Advisor: Mac OS Specialist",
+      company: "Apple",
+      companylogo: require("./assets/images/appleLogo.png"),
+      date: "Dec 2014 – Jan 2017",
+      desc: "Responded to client concerns, curated and completed troubleshooting steps while tracking bugs/issues. Consistently met and exceeded client satisfaction and business requirements, resulting in advanced training opportunities."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Customer Service Respresentative: Verizon Mobile Support",
+      company: "Xerox",
+      companylogo: require("./assets/images/xeroxLogo.jpeg"),
+      date: "Oct 2013 – Nov 2014",
+      desc: "Provided technical support for mobile devices of a multitude of brands. Advised clients of their options for using their devices abroad and how to navigate using data/network access to their benefit."
     }
   ]
 };
@@ -212,29 +217,40 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "SOME OF MY WORKS IN PROGRESS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/flickITS.png"),
+      projectName: "Flick ITS",
+      projectDesc: "Issue Tracking System I'm developing and using for my current projects.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit Repo",
+          url: "https://github.com/S-Hightower/Flick-ITS"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/sportsDash.png"),
+      projectName: "Sports Dash: Football Edition",
+      projectDesc: "Dashboard for league, team, livescores information.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit Repo",
+          url: "https://github.com/S-Hightower/Sports_Dash"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nokoriLogo.png"),
+      projectName: "Nokori App",
+      projectDesc: "Search engine for anime shows.",
+      footerLink: [
+        {
+          name: "Visit Repo",
+          url: "https://github.com/S-Hightower/Nokori_App"
         }
       ]
     }
@@ -297,7 +313,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -321,7 +337,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -340,7 +356,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -353,22 +369,20 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me 🔮"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    emoji("Want to discuss a project or just want to say hi? My Inbox is open✌🏼.")
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 export {
